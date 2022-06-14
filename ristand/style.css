@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url("5/Background.jpg");
+    color: rgb(68, 68, 68);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.container .card {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    max-width: 300px;
+    text-align: center;
+    margin-top: 60px;
+    height: 210px;
+    position: relative;
+    margin: 30px 10px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.1s ease-in-out;
+}
+
+.container .card:hover {
+    height: 450px;
+}
+
+.container .card .imgbox {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -50px;
+    left: 0px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin: -30px auto 0;
+    z-index: 1;
+}
+
+.container .card .imgbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: 0.1s;
+}
+
+.container .card .content h2 {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container .card .content .sosmed {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .card .content .sosmed a img {
+    height: 50px;
+    width: 50px;
+}
+
+.video {
+    height: 10vh;
+    width: 100%;
+    margin-bottom: 20vh;
+}
+
+.video .card {
+    height: 60%;
+    width: 60%;
+    margin: auto;
+}
+
+.video .card a {
+    text-decoration: none;
+}
+
+.video .card a p {
+    font-weight: 650;
+    font-size: 50px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    width: 90vh;
+    border: 1px solid rgb(33, 155, 255);
+    margin: auto;
+    background: rgba(32, 210, 255, 0.1);
+}
